@@ -92,8 +92,7 @@ export default function Home() {
             ].map((feature, index) => (
               <div
                 key={index}
-                className="bg-white p-9 rounded-[24px] shadow-sm border-[1px] border-[#C0C0C04F]"
-              >
+                className="bg-white p-9 rounded-[24px] shadow-sm border-[1px] border-[#C0C0C04F]">
                 <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
                 <p className="text-gray-600">{feature.description}</p>
               </div>
@@ -142,8 +141,7 @@ export default function Home() {
               <div
                 key={index}
                 className={`relative overflow-hidden rounded-lg bg-no-repeat bg-cover bg-center h-[300px]`}
-                style={{ backgroundImage: `url(${card.image})` }}
-              >
+                style={{ backgroundImage: `url(${card.image})` }}>
                 {/* <Image src="/placeholder.svg?height=300&width=400" width={400} height={300} alt={card.title} className="w-full h-48 object-cover" /> */}
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4">
                   <h3 className="text-white text-xl font-semibold mb-2">
@@ -200,8 +198,7 @@ export default function Home() {
                 className="flex flex-col p-8 border-[1px] border-[#C0C0C04F] rounded-[24px] items-start max-w-[258px] mb-8 md:mb-0"
                 style={{
                   backgroundColor: !step.background ? "" : step.background,
-                }}
-              >
+                }}>
                 <div className="w-12 h-12 bg-[#FFFFFF] rounded-full flex items-center justify-center text-xl font-bold mb-4">
                   {step.icon}
                 </div>
@@ -248,8 +245,7 @@ export default function Home() {
               </div>
               <button
                 type="submit"
-                className="w-full bg-black text-white px-6 py-3 rounded-full text-lg font-semibold"
-              >
+                className="w-full bg-black text-white px-6 py-3 rounded-full text-lg font-semibold">
                 Join the waitlist
               </button>
             </form>
@@ -298,13 +294,13 @@ export default function Home() {
               </p>
               <div className="flex space-x-4">
                 <Image
-                  src="/placeholder.svg?height=40&width=120"
+                  src="/assets/googleplay.svg"
                   width={120}
                   height={40}
                   alt="Get it on Google Play"
                 />
                 <Image
-                  src="/placeholder.svg?height=40&width=120"
+                  src="/assets/applestore.svg"
                   width={120}
                   height={40}
                   alt="Download on the App Store"
