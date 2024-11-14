@@ -6,7 +6,7 @@ const Layout = ({ children }:{children: ReactNode}) => {
   return (
     <div>
         <header className="container mx-auto px-4 py-6 flex justify-between items-center">
-            <Image src="/assets/SafeTranx.svg" height={40} width={150} alt="SafeTranx Logo" className="h-10" />
+            <Image src="/assets/swissahecom.svg" height={40} width={150} alt="SwissahEcom Logo" className="h-10" />
             <nav className="hidden md:flex space-x-6">
             <Link href="/" className="text-gray-600 hover:text-gray-900">Home</Link>
             <Link href="#" className="text-gray-600 hover:text-gray-900">About Us</Link>
@@ -22,9 +22,9 @@ const Layout = ({ children }:{children: ReactNode}) => {
             <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-between">
                 <div className="w-full md:w-1/4 mb-8 md:mb-0">
-                <Image src="/placeholder.svg?height=40&width=150" height={40} width={150} alt="SafeTranx Logo" className="h-10 mb-4" />
+                <Image src="/assets/swissahecom.svg" height={40} width={150} alt="SafeTranx Logo" className="h-10 mb-4" />
                 <p className="text-sm text-gray-600">
-                Be part of Africa’s trusted e-commerce revolution with SafeTranX. Join the waitlist today and experience secure, transparent transactions, real-time tracking, price bidding for deliveries, and instant payments for sellers
+                Be part of Africa&apos;s trusted e-commerce revolution with SwissahEcom. Join the waitlist today and experience secure, transparent transactions, real-time tracking, price bidding for deliveries, and instant payments for sellers
                 </p>
                 </div>
                 <div className="w-full md:w-1/4 mb-8 md:mb-0">
@@ -52,7 +52,7 @@ const Layout = ({ children }:{children: ReactNode}) => {
                 </div>
             </div>
             <div className="mt-12 pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center">
-                <p className="text-sm text-gray-600 mb-4 md:mb-0">&copy; 2023 SafeTranx. All rights reserved.</p>
+                <p className="text-sm text-gray-600 mb-4 md:mb-0">&copy; {new Date().getFullYear()} SwissahEcom. All rights reserved.</p>
                 <div className="flex space-x-4">
                 <Link href="#" className="text-gray-600 hover:text-gray-900">
                     <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
