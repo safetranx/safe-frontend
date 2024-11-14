@@ -1,17 +1,17 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import { ChevronRight, CheckCircle2, Compass } from 'lucide-react'
-import Join from './icons/Join';
-import Secure from './icons/Secure';
-import Truck from './icons/Truck';
-import Layout from '@/components/Layout';
+import Image from "next/image";
+import Link from "next/link";
+import { ChevronRight, CheckCircle2, Compass } from "lucide-react";
+import Join from "./icons/Join";
+import Secure from "./icons/Secure";
+import Truck from "./icons/Truck";
+import Layout from "@/components/Layout";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#FFFDF7] font-sans">
       {/* Header */}
       {/* <header className="container mx-auto px-4 py-6 flex justify-between items-center">
-        <Image src="/assets/SafeTranx.svg" height={40} width={150} alt="SafeTranx Logo" className="h-10" />
+        <Image src="/assets/SafeTranx.svg" height={40} width={150} alt="SwissahEcom Logo" className="h-10" />
         <nav className="hidden md:flex space-x-6">
           <Link href="#" className="text-gray-600 hover:text-gray-900">Home</Link>
           <Link href="#" className="text-gray-600 hover:text-gray-900">About Us</Link>
@@ -25,33 +25,75 @@ export default function Home() {
         <section className="container mx-auto px-4 py-28 text-center relative bg-[url('/assets/hero.svg')] bg-cover">
           <p>Secure Escrow Payments for Buyers, Instant Payments for Sellers</p>
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            <span className="text-[#545143]">SHOP <span className='text-[#FFD700]'>SMARTER</span></span><br />
-            <span className=" text-[#545143]">SHOP <span className='text-[#FFD700]'>SAFER</span></span>
+            <span className="text-[#545143]">
+              SHOP <span className="text-[#FFD700]">SMARTER</span>
+            </span>
+            <br />
+            <span className=" text-[#545143]">
+              SHOP <span className="text-[#FFD700]">SAFER</span>
+            </span>
           </h1>
           <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
-          Join SafeTranX to experience seamless e-commerce with trusted quality checks, real-time order tracking, and reliable delivery across Africa. Get on the waitlist today!
+            Join SwissahEcom to experience seamless e-commerce with trusted
+            quality checks, real-time order tracking, and reliable delivery
+            across Africa. Get on the waitlist today!
           </p>
           <button className="bg-black text-[#FFD700] px-6 py-3 rounded-full text-lg font-semibold">
-          Join The Waitlist
+            Join The Waitlist
           </button>
           <div className="absolute top-0 left-0 w-full h-full -z-10">
-            <Image src="/placeholder.svg?height=600&width=1200" layout="fill" objectFit="cover" alt="Background pattern" className="opacity-10" />
+            <Image
+              src="/placeholder.svg?height=600&width=1200"
+              layout="fill"
+              objectFit="cover"
+              alt="Background pattern"
+              className="opacity-10"
+            />
           </div>
         </section>
 
-        {/* Why Choose SafeTranx */}
+        {/* Why Choose SwissahEcom */}
         <section className="container mx-auto px-4 py-16">
-          <h2 className="text-3xl font-bold text-center mb-12">Why Choose SafeTranx</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">
+            Why Choose SwissahEcom
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
-              { title: "Secure Transactions with Escrow", description: "Buyers pay through escrow, so their money is only released to the seller after product delivery and verification." },
-              { title: "Real-Time Order Tracking", description: "Buyers can track their orders from validation to delivery, ensuring transparency throughout the process" },
-              { title: "Instant Payments for Sellers", description: "Sellers receive instant payment once the buyer confirms that the product has been delivered in good condition" },
-              { title: "Price Bidding for Delivery", description: "Sellers can choose the best delivery option by selecting from available riders based on price bidding and proximity." },
-              { title: "Trusted Validators", description: "Third-party validators inspect every product before it’s handed over for delivery, ensuring quality."},
-              { title: "Seamless Logistics Integration", description: "Sellers can choose from multiple logistics partners, ensuring fast and reliable deliveries to buyers."},
+              {
+                title: "Secure Transactions with Escrow",
+                description:
+                  "Buyers pay through escrow, so their money is only released to the seller after product delivery and verification.",
+              },
+              {
+                title: "Real-Time Order Tracking",
+                description:
+                  "Buyers can track their orders from validation to delivery, ensuring transparency throughout the process",
+              },
+              {
+                title: "Instant Payments for Sellers",
+                description:
+                  "Sellers receive instant payment once the buyer confirms that the product has been delivered in good condition",
+              },
+              {
+                title: "Price Bidding for Delivery",
+                description:
+                  "Sellers can choose the best delivery option by selecting from available riders based on price bidding and proximity.",
+              },
+              {
+                title: "Trusted Validators",
+                description:
+                  "Third-party validators inspect every product before it’s handed over for delivery, ensuring quality.",
+              },
+              {
+                title: "Seamless Logistics Integration",
+                description:
+                  "Sellers can choose from multiple logistics partners, ensuring fast and reliable deliveries to buyers.",
+              },
             ].map((feature, index) => (
-              <div key={index} className="bg-white p-9 rounded-[24px] shadow-sm border-[1px] border-[#C0C0C04F]">
+              <div
+                key={index}
+                className="bg-white p-9 rounded-[24px] shadow-sm border-[1px] border-[#C0C0C04F]"
+              >
                 <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
                 <p className="text-gray-600">{feature.description}</p>
               </div>
@@ -61,24 +103,52 @@ export default function Home() {
 
         {/* Get Started Today */}
         <section className="container mx-auto px-4 py-16">
-          <div className='flex flex-col items-center py-4'>
-              <h2 className="text-3xl font-bold text-center mb-2">Get Started Today</h2>
-              <p className='text-[#A7ABB6] text-center max-w-[619px]'>SafeTranX connects buyers, sellers, validators, and logistics partners to create a secure and transparent e-commerce ecosystem.</p>
+          <div className="flex flex-col items-center py-4">
+            <h2 className="text-3xl font-bold text-center mb-2">
+              Get Started Today
+            </h2>
+            <p className="text-[#A7ABB6] text-center max-w-[619px]">
+              SwissahEcom connects buyers, sellers, validators, and logistics
+              partners to create a secure and transparent e-commerce ecosystem.
+            </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
             {[
-              { title: "For Sellers", description: "You get instant payment upon order completion, with no risk of delayed payments from delivery agents or third-party platforms.", image: '/assets/for-sellers.svg' },
-              { title: "For Buyers", description: "Your payment is held securely in escrow until the product is delivered and verified. You can track the status of your order in real time, from seller confirmation to delivery.", image: '/assets/for-buyers.svg' },
-              { title: "For Validators", description: "Ensure product quality before and after delivery, earning money by protecting both buyers and sellers.", image: '/assets/for-validators.svg' },
-              { title: "For Logistics Companies", description: "Grow your business by delivering verified products for trusted sellers and receiving fast payments for completed deliveries.", image: '/assets/for-logistics.svg' }
+              {
+                title: "For Sellers",
+                description:
+                  "You get instant payment upon order completion, with no risk of delayed payments from delivery agents or third-party platforms.",
+                image: "/assets/for-sellers.svg",
+              },
+              {
+                title: "For Buyers",
+                description:
+                  "Your payment is held securely in escrow until the product is delivered and verified. You can track the status of your order in real time, from seller confirmation to delivery.",
+                image: "/assets/for-buyers.svg",
+              },
+              {
+                title: "For Validators",
+                description:
+                  "Ensure product quality before and after delivery, earning money by protecting both buyers and sellers.",
+                image: "/assets/for-validators.svg",
+              },
+              {
+                title: "For Logistics Companies",
+                description:
+                  "Grow your business by delivering verified products for trusted sellers and receiving fast payments for completed deliveries.",
+                image: "/assets/for-logistics.svg",
+              },
             ].map((card, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className={`relative overflow-hidden rounded-lg bg-no-repeat bg-cover bg-center h-[300px]`}
-                style={{ backgroundImage: `url(${card.image})` }}>
+                style={{ backgroundImage: `url(${card.image})` }}
+              >
                 {/* <Image src="/placeholder.svg?height=300&width=400" width={400} height={300} alt={card.title} className="w-full h-48 object-cover" /> */}
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-end p-4">
-                  <h3 className="text-white text-xl font-semibold mb-2">{card.title}</h3>
+                  <h3 className="text-white text-xl font-semibold mb-2">
+                    {card.title}
+                  </h3>
                   <p className="text-white text-sm">{card.description}</p>
                 </div>
               </div>
@@ -91,23 +161,47 @@ export default function Home() {
           </div>
         </section>
 
-        {/* How SafeTranx Works */}
+        {/* How SwissahEcom Works */}
         <section className="container mx-auto px-4 py-16">
-          <div className='py-4'>
-            <h2 className="text-3xl font-bold text-center mb-2">How SafeTranx Works</h2>
-            <p className='text-[#A7ABB6] text-center'>A Step-by-Step Guide to SafeTranX</p>
+          <div className="py-4">
+            <h2 className="text-3xl font-bold text-center mb-2">
+              How SwissahEcom Works
+            </h2>
+            <p className="text-[#A7ABB6] text-center">
+              A Step-by-Step Guide to SwissahEcom
+            </p>
           </div>
           <div className="flex flex-col md:flex-row justify-between items-start">
             {[
-              { icon: <Join />, title: "Join the Platform", description: "Sign up and create your account" },
-              { icon: <Compass />, title: "Browse Categories", description: "Explore a wide range of products", background: "#FBF5CF" },
-              { icon: <Secure />, title: "Secure Checkout", description: "Pay securely with our escrow system" },
-              { icon: <Truck />, title: "Receive Your Products", description: "Get your items delivered to your doorstep" }
+              {
+                icon: <Join />,
+                title: "Join the Platform",
+                description: "Sign up and create your account",
+              },
+              {
+                icon: <Compass />,
+                title: "Browse Categories",
+                description: "Explore a wide range of products",
+                background: "#FBF5CF",
+              },
+              {
+                icon: <Secure />,
+                title: "Secure Checkout",
+                description: "Pay securely with our escrow system",
+              },
+              {
+                icon: <Truck />,
+                title: "Receive Your Products",
+                description: "Get your items delivered to your doorstep",
+              },
             ].map((step, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="flex flex-col p-8 border-[1px] border-[#C0C0C04F] rounded-[24px] items-start max-w-[258px] mb-8 md:mb-0"
-                style={{ backgroundColor: !step.background ? "" : step.background }}>
+                style={{
+                  backgroundColor: !step.background ? "" : step.background,
+                }}
+              >
                 <div className="w-12 h-12 bg-[#FFFFFF] rounded-full flex items-center justify-center text-xl font-bold mb-4">
                   {step.icon}
                 </div>
@@ -121,21 +215,41 @@ export default function Home() {
         {/* Sign Up Form */}
         <section className="container mx-auto px-4 py-16">
           <div className="bg-[#FFF8E1] rounded-lg p-8 md:p-12">
-            <h2 className="text-3xl font-bold text-center mb-6">Be the First to Experience SafeTranx</h2>
+            <h2 className="text-3xl font-bold text-center mb-6">
+              Be the First to Experience SwissahEcom
+            </h2>
             <p className="text-center text-gray-600 mb-8">
-              Join SafeTranx today and experience secure, transparent e-commerce with real-time tracking and flexible delivery options. Sign up for early access to the future of buying, selling, and delivering across Africa!
+              Join SwissahEcom today and experience secure, transparent
+              e-commerce with real-time tracking and flexible delivery options.
+              Sign up for early access to the future of buying, selling, and
+              delivering across Africa!
             </p>
             <form className="max-w-md mx-auto">
               <div className="mb-4">
-                <input type="text" placeholder="Full Name" className="w-full px-4 py-2 rounded-full border border-gray-300" />
+                <input
+                  type="text"
+                  placeholder="Full Name"
+                  className="w-full px-4 py-2 rounded-full border border-gray-300"
+                />
               </div>
               <div className="mb-4">
-                <input type="email" placeholder="Email" className="w-full px-4 py-2 rounded-full border border-gray-300" />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  className="w-full px-4 py-2 rounded-full border border-gray-300"
+                />
               </div>
               <div className="mb-6">
-                <input type="tel" placeholder="Phone" className="w-full px-4 py-2 rounded-full border border-gray-300" />
+                <input
+                  type="tel"
+                  placeholder="Phone"
+                  className="w-full px-4 py-2 rounded-full border border-gray-300"
+                />
               </div>
-              <button type="submit" className="w-full bg-black text-white px-6 py-3 rounded-full text-lg font-semibold">
+              <button
+                type="submit"
+                className="w-full bg-black text-white px-6 py-3 rounded-full text-lg font-semibold"
+              >
                 Join the waitlist
               </button>
             </form>
@@ -147,14 +261,18 @@ export default function Home() {
 
         {/* FAQ Section */}
         <section className="container mx-auto px-4 py-16">
-          <h2 className="text-3xl font-bold text-center mb-12">Have any questions?<br />Read popular answers below</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">
+            Have any questions?
+            <br />
+            Read popular answers below
+          </h2>
           <div className="space-y-6">
             {[
-              "How does SafeTranx protect my payment?",
+              "How does SwissahEcom protect my payment?",
               "How fast do sellers get paid?",
               "Can I track my order after making a purchase?",
               "Can sellers choose their delivery agents?",
-              "How do logistics companies get paid?"
+              "How do logistics companies get paid?",
             ].map((question, index) => (
               <div key={index} className="border-b border-gray-200 pb-4">
                 <button className="flex justify-between items-center w-full text-left">
@@ -170,31 +288,50 @@ export default function Home() {
         <section className="container mx-auto px-4 py-16">
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 mb-8 md:mb-0">
-              <h2 className="text-3xl font-bold mb-4">Manage all orders from your mobile</h2>
+              <h2 className="text-3xl font-bold mb-4">
+                Manage all orders from your mobile
+              </h2>
               <p className="text-gray-600 mb-6">
-                Manage your shopping experience, track your orders, and communicate with sellers and delivery agents - all from the palm of your hand. Download the SafeTranx app today!
+                Manage your shopping experience, track your orders, and
+                communicate with sellers and delivery agents - all from the palm
+                of your hand. Download the SwissahEcom app today!
               </p>
               <div className="flex space-x-4">
-                <Image src="/placeholder.svg?height=40&width=120" width={120} height={40} alt="Get it on Google Play" />
-                <Image src="/placeholder.svg?height=40&width=120" width={120} height={40} alt="Download on the App Store" />
+                <Image
+                  src="/placeholder.svg?height=40&width=120"
+                  width={120}
+                  height={40}
+                  alt="Get it on Google Play"
+                />
+                <Image
+                  src="/placeholder.svg?height=40&width=120"
+                  width={120}
+                  height={40}
+                  alt="Download on the App Store"
+                />
               </div>
             </div>
             <div className="md:w-1/2">
-              <Image src="/assets/mobile-phone.svg" width={300} height={600} alt="SafeTranx Mobile App" className="mx-auto" />
+              <Image
+                src="/assets/mobile-phone.svg"
+                width={300}
+                height={600}
+                alt="SwissahEcom Mobile App"
+                className="mx-auto"
+              />
             </div>
           </div>
         </section>
       </Layout>
-
 
       {/* Footer */}
       {/* <footer className="bg-gray-100 py-12">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-between">
             <div className="w-full md:w-1/4 mb-8 md:mb-0">
-              <Image src="/placeholder.svg?height=40&width=150" height={40} width={150} alt="SafeTranx Logo" className="h-10 mb-4" />
+              <Image src="/placeholder.svg?height=40&width=150" height={40} width={150} alt="SwissahEcom Logo" className="h-10 mb-4" />
               <p className="text-sm text-gray-600">
-                SafeTranx is Africa's leading e-commerce platform, providing secure transactions and seamless delivery across the continent.
+                SwissahEcom is Africa's leading e-commerce platform, providing secure transactions and seamless delivery across the continent.
               </p>
             </div>
             <div className="w-full md:w-1/4 mb-8 md:mb-0">
@@ -207,7 +344,7 @@ export default function Home() {
             </div>
             <div className="w-full md:w-1/4 mb-8 md:mb-0">
               <h3 className="text-lg font-semibold mb-4">Contact</h3>
-              <p className="text-gray-600">support@safetranx.com</p>
+              <p className="text-gray-600">info@swissahecomltd.com</p>
               <p className="text-gray-600">+1 (555) 123-4567</p>
             </div>
             <div className="w-full md:w-1/4">
@@ -221,7 +358,7 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-12 pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-sm text-gray-600 mb-4 md:mb-0">&copy; 2023 SafeTranx. All rights reserved.</p>
+            <p className="text-sm text-gray-600 mb-4 md:mb-0">&copy; 2023 SwissahEcom. All rights reserved.</p>
             <div className="flex space-x-4">
               <Link href="#" className="text-gray-600 hover:text-gray-900">
                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
