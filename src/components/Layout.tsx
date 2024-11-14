@@ -37,10 +37,11 @@ const Layout = ({ children }: { children: ReactNode }) => {
       </header>
 
       <div className="mt-5">{children}</div>
-      <footer className="bg-gray-100 py-12">
+      <footer className="bg-[#1F1C0B] py-12">
         <div className="container mx-auto px-4">
-          <div className="flex flex-wrap justify-between">
-            <div className="w-full md:w-1/4 mb-8 md:mb-0">
+          <div className="flex flex-col lg:flex-row gap-[51px]">
+          {/* md:w-1/4 */}
+            <div className="w-full max-w-[292px]  mb-8 md:mb-0">
               <Image
                 src="/assets/swissahEcom.svg"
                 height={40}
@@ -48,64 +49,98 @@ const Layout = ({ children }: { children: ReactNode }) => {
                 alt="SafeTranx Logo"
                 className="h-10 mb-4"
               />
-              <p className="text-sm text-gray-600">
+              <p className="text-sm w-full text-[#A7ABB6]">
                 Be part of Africa&apos;s trusted e-commerce revolution with
                 SwissahEcom. Join the waitlist today and experience secure,
                 transparent transactions, real-time tracking, price bidding for
                 deliveries, and instant payments for sellers
               </p>
             </div>
-            <div className="w-full md:w-1/4 mb-8 md:mb-0">
-              <h3 className="text-lg font-semibold mb-4">Company</h3>
-              <ul className="space-y-2">
-                <li>
-                  <Link href="#" className="text-gray-600 hover:text-gray-900">
-                    About Us
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-gray-600 hover:text-gray-900">
-                    Careers
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="text-gray-600 hover:text-gray-900">
-                    Press
-                  </Link>
-                </li>
-              </ul>
+
+            <div className="flex flex-col lg:flex-row w-full gap-[51px]">
+
+                <div className="w-full mb-8 md:mb-0">
+                <h3 className="text-lg font-semibold mb-4 text-[#D9D9D9]">Home</h3>
+                <ul className="space-y-2">
+                    <li>
+                    <Link href="#" className="text-[#A7ABB6] hover:text-gray-900">
+                        About
+                    </Link>
+                    </li>
+                    <li>
+                    <Link href="#" className="text-[#A7ABB6] hover:text-gray-900">
+                        How it works
+                    </Link>
+                    </li>
+                    <li>
+                    <Link href="#" className="text-[#A7ABB6] hover:text-gray-900">
+                        Download
+                    </Link>
+                    </li>
+                </ul>
+                </div>
+
+                <div className="w-full mb-8 md:mb-0">
+                <h3 className="text-lg font-semibold mb-4 text-[#D9D9D9]">Join Us</h3>
+                <ul className="space-y-2 ">
+                   
+                    <li>
+                    <Link href="#" className="text-[#A7ABB6] hover:text-gray-900">
+                    Buyer
+                    </Link>
+                    </li>
+                    <li>
+                    <Link href="#" className="text-[#A7ABB6] hover:text-gray-900">
+                    Vendor
+                    </Link>
+                    </li>
+                    <li>
+                    <Link href="#" className="text-[#A7ABB6] hover:text-gray-900">
+                    Validator
+                    </Link>
+                    </li>
+                    <li>
+                    <Link href="#" className="text-[#A7ABB6] hover:text-gray-900">
+                    Rider
+                    </Link>
+                    </li>
+                </ul>
+                </div>
+                <div className="w-full mb-8 md:mb-0">
+                <h3 className="text-lg font-semibold mb-4 text-[#D9D9D9]">Contact</h3>
+                <p className="text-[#A7ABB6]">+234 708 486 3705</p>
+                <p className="text-[#A7ABB6]">support@swissahecom.com</p>
+                <p className="text-[#A7ABB6]">Lagos, Nigeria</p>
+                </div>
             </div>
-            <div className="w-full md:w-1/4 mb-8 md:mb-0">
-              <h3 className="text-lg font-semibold mb-4">Contact</h3>
-              <p className="text-gray-600">+234 708 486 3705</p>
-              <p className="text-gray-600">support@safetranx.com</p>
-              <p className="text-gray-600">Lagos, Nigeria</p>
-            </div>
-            <div className="w-full md:w-1/4">
-              <h3 className="text-lg font-semibold mb-4">
+            <div className="w-full">
+              <h3 className="text-lg font-semibold mb-4 text-[#D9D9D9]">
                 Subscribe to our newsletter
               </h3>
-              <form className="flex">
+              <p className="pb-4 text-[#A7ABB6]">
+              Be the first to receive exciting news, insider tips, and special promotions.
+              </p>
+              <form className="flex  relative">
                 <input
                   type="email"
                   placeholder="Your email"
-                  className="flex-grow px-4 py-2 rounded-l-full border border-gray-300"
+                  className="relative text-[#A7ABB6] bg-[#3D3D3D] outline-[#FFD700] outline-1 px-4 py-2 w-full rounded-l-full lg:rounded-full border border-gray-300"
                 />
                 <button
                   type="submit"
-                  className="bg-black text-white px-4 py-2 rounded-r-full">
+                  className="bg-black lg:top-[3px] text-xs lg:text-sm lg:absolute lg:right-[3px] text-white px-4 py-2 rounded-r-full lg:rounded-full">
                   Subscribe
                 </button>
               </form>
             </div>
           </div>
           <div className="mt-12 pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-sm text-gray-600 mb-4 md:mb-0">
+            <p className="text-sm text-[#FFD700] mb-4 md:mb-0">
               &copy; {new Date().getFullYear()} SwissahEcom. All rights
               reserved.
             </p>
             <div className="flex space-x-4">
-              <Link href="#" className="text-gray-600 hover:text-gray-900">
+              <Link href="#" className="text-[#FFD700] hover:text-gray-900">
                 <svg
                   className="w-6 h-6"
                   fill="currentColor"
@@ -118,7 +153,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
                   />
                 </svg>
               </Link>
-              <Link href="#" className="text-gray-600 hover:text-gray-900">
+              <Link href="#" className="text-[#FFD700] hover:text-gray-900">
                 <svg
                   className="w-6 h-6"
                   fill="currentColor"
@@ -131,7 +166,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
                   />
                 </svg>
               </Link>
-              <Link href="#" className="text-gray-600 hover:text-gray-900">
+              <Link href="#" className="text-[#FFD700] hover:text-gray-900">
                 <svg
                   className="w-6 h-6"
                   fill="currentColor"
@@ -140,6 +175,10 @@ const Layout = ({ children }: { children: ReactNode }) => {
                   <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
                 </svg>
               </Link>
+
+              {/* <Link href="#" className="text-[#FFD700] hover:text-gray-900">
+                Whats
+              </Link> */}
             </div>
           </div>
         </div>

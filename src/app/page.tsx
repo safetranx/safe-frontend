@@ -5,24 +5,15 @@ import Join from "./icons/Join";
 import Secure from "./icons/Secure";
 import Truck from "./icons/Truck";
 import Layout from "@/components/Layout";
+import Faq from "@/components/Faq";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#FFFDF7] font-sans">
-      {/* Header */}
-      {/* <header className="container mx-auto px-4 py-6 flex justify-between items-center">
-        <Image src="/assets/SafeTranx.svg" height={40} width={150} alt="SwissahEcom Logo" className="h-10" />
-        <nav className="hidden md:flex space-x-6">
-          <Link href="#" className="text-gray-600 hover:text-gray-900">Home</Link>
-          <Link href="#" className="text-gray-600 hover:text-gray-900">About Us</Link>
-          <Link href="#" className="text-gray-600 hover:text-gray-900">How it Works</Link>
-          <Link href="#" className="text-gray-600 hover:text-gray-900">Contact</Link>
-        </nav>
-        <button className="bg-black text-[#FFD700] px-4 py-2 rounded-full text-sm">Download App</button>
-      </header> */}
+      
       <Layout>
         {/* Hero Section */}
-        <section className="container mx-auto px-4 py-28 text-center relative bg-[url('/assets/hero.svg')] bg-cover">
+        <section className="container mx-auto px-4 py-28 text-center relative lg:bg-[url('/assets/hero.svg')] bg-cover">
           <p>Secure Escrow Payments for Buyers, Instant Payments for Sellers</p>
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             <span className="text-[#545143]">
@@ -169,7 +160,7 @@ export default function Home() {
               A Step-by-Step Guide to SwissahEcom
             </p>
           </div>
-          <div className="flex flex-col md:flex-row justify-between items-start">
+          <div className="flex flex-col items-center md:flex-row justify-between lg:items-start">
             {[
               {
                 icon: <Join />,
@@ -256,8 +247,9 @@ export default function Home() {
         </section>
 
         {/* FAQ Section */}
-        <section className="container mx-auto px-4 py-16">
-          <h2 className="text-3xl font-bold text-center mb-12">
+        <section className="container mx-auto px-4 py-16 w-full">
+          <Faq />
+          {/* <h2 className="text-3xl font-bold text-center mb-12">
             Have any questions?
             <br />
             Read popular answers below
@@ -277,7 +269,7 @@ export default function Home() {
                 </button>
               </div>
             ))}
-          </div>
+          </div> */}
         </section>
 
         {/* Mobile App Promotion */}
